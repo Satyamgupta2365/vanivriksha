@@ -3,7 +3,6 @@ import torch
 from transformers import Wav2Vec2Processor, Wav2Vec2ForCTC, pipeline
 from pydub import AudioSegment
 
-# Load audio and resample to 16kHz if needed
 def load_audio(file_path):
     audio, _ = librosa.load(file_path, sr=16000)
     return audio
