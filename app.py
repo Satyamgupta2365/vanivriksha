@@ -50,7 +50,6 @@ def get_answer(question):
             best_score = result['score']
     return best_answer
 
-# Example usage of the QA system
 question = "How to cultivate sandalwood?"
 answer = get_answer(question)
 print("Final Answer:", answer)
