@@ -14,7 +14,6 @@ def convert_to_wav(mp3_path):
     audio.export(wav_path, format="wav")
     return wav_path
 
-# Load processor and model
 processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-large-xlsr-53")
 model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-large-xlsr-53")
 qa_pipeline = pipeline("question-answering")
